@@ -76,7 +76,7 @@ print(b)
 # Tensors can be moved onto any device
 if torch.cuda.is_available():
     device = torch.device("cuda")
-    y = torch.ones_like(x, device=device)
+    y = torch.ones_like(x, device = device)
     x = x.to(device) # x is moved onto CUDA device
     z = x + y
     print(z)
